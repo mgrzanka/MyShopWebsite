@@ -1,6 +1,6 @@
 # MyShopWebsite
 
-MyShopWebsite is a simple web application imitating an online store. The project is still under development and aims to provide basic e-commerce functionalities. The application currently supports:
+MyShopWebsite is a simple web application imitating an online store. The project still requires some development (core functionalities implemented though) and aims to provide basic e-commerce functionalities. The application currently supports:
 - User registration and login.
 - Adding items for sale.
 - Adding items to cart.
