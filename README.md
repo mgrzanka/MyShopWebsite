@@ -3,8 +3,9 @@
 MyShopWebsite is a simple web application imitating an online store. The project is still under development and aims to provide basic e-commerce functionalities. The application currently supports:
 - User registration and login.
 - Adding items for sale.
-- Viewing your listed items.
-- Editing details of listed items.
+- Adding items to cart.
+- Viewing your added items.
+- Editing details of added items.
 
 ## Features
 
@@ -13,14 +14,16 @@ MyShopWebsite is a simple web application imitating an online store. The project
    - Users can create accounts and log in using forms.
 2. **Listing Items for Sale**:
    - Users can add new items for sale by specifying their name, category, price, quantity, and description.
-3. **Viewing Listed Items**:
-   - The "My Items" page displays all items listed by the user.
-4. **Editing Items**:
+3. **Adding items to the cart**
+     - Users can add items that were added by others to the cart to later buy them (buying not implemented!).
+4. **Viewing Added Items**:
+   - The "My Items" page displays all items added by the user.
+5. **Editing Items**:
    - Users can update details of their items (e.g., name, category, price, quantity, or description).
 
 ### In Progress:
 1. **Buying Items**:
-   - Adding functionality for purchasing listed items by other users.
+   - Adding functionality for purchasing added items by other users.
 
 ## How to Run the Application
 
