@@ -114,7 +114,7 @@ def delete_image(item_id, img_id):
     return redirect(url_for("update_page", id=item_id))
 
 
-# TODO: mail with nformtion someone bought your item
+# TODO: mail with informtion someone bought your item
 # TODO: Implement item delivery API
 @app.route('/cart', methods=['POST', 'GET'])
 @login_required
@@ -127,7 +127,7 @@ def cart_page():
     counter = 1
     total = 0
     if session.get('cart') is not None:
-        items_amounts = session['cart'].values()
+        items_amounts = list(session['cart'].values())
         items_id = session['cart'].keys()
         for id, amount in zip(items_id, items_amounts):
             item = Item.query.get(id)
@@ -166,7 +166,7 @@ def cart_page():
                     item.owner.budget += item_amount * item.price
                     del session['cart'][str(item.id)]
             db.session.commit()
-            # TODO: mail with nformtion someone bought your item
+            # TODO: mail with informtion someone bought your item
             # TODO: Implement item delivary API
             flash("Thank you for purchasing in our shop :P", category="success")
             return redirect(url_for('home_page'))
